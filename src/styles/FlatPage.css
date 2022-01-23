@@ -1,0 +1,46 @@
+.flat-page {
+    width: 90%;
+    margin: auto;
+}
+
+.flat-page p, .flat-page h2 {
+    color: var(--primary);
+}
+
+.flat-page h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.flat-page p {
+    font-size: 0.7em;
+}
+
+.flat-page__header, .tag-container {
+    display: flex;
+    gap: 10px;
+}
+
+.title-and-tags {
+    width: 100%;
+}
+
+.flat-page__title, .flat-page__subtitle {
+    text-align: left;
+}
+
+
+.flat-page__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@media (max-device-width: 700px) {
+    .flat-page__header {
+        display: block;
+    }
+    .flat-page__main {
+        display: block;
+    }
+}

@@ -1,0 +1,20 @@
+.flat__description {
+    width: 75%;
+    padding-left: 10px;
+}
+
+.flat__description-content {
+    font-size: 0.7em;
+    color: var(--primary);
+    font-weight: 500;
+    text-align: left;
+    line-height: 27px;
+    padding: 10px;
+}
+
+@media (max-device-width: 700px) {
+    .flat__description {
+        width: 100%;
+        padding-left: 0px;
+    }
+}

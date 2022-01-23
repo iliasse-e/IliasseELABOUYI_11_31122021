@@ -1,0 +1,30 @@
+.dropdown {
+    
+    height: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color : var(--primary);
+    border-radius: 5px;
+    padding: 10px 20px;
+    max-width: 1023px;
+    margin-top: 25px;
+}
+
+.dropdown__title {
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.dropdown__chevron-down {
+    margin-top: 5px;
+    text-align: center;
+    width: 20px;
+    height: 15px;
+    vertical-align:bottom;
+
+}
+
+#description, #equipements {
+    width: 100%;
+}

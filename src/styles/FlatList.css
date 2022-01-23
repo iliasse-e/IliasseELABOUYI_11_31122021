@@ -1,10 +1,27 @@
 .flat-list {
-    margin-top: 50px;
+    align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 0px;
     grid-row-gap: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+    width: 88%;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+@media (max-device-width: 900px) {
+    .flat-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-device-width: 600px) {
+    .flat-list {
+        grid-template-columns: none;
+        width: auto;
+        padding: 0px;
+    }
+
 }

@@ -1,0 +1,17 @@
+#error {
+    color: var(--primary);
+}
+
+#error__title {
+    font-size: 8em;
+}
+
+#error__description {
+    font-size: 2em;
+
+}
+
+#error__linktomain {
+    color: var(--primary);
+    text-decoration-color: var(--primary);
+}

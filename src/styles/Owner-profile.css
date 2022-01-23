@@ -1,0 +1,36 @@
+#profile__header {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    margin: auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#owner-name {
+    text-align: end;
+    padding-right: 15px;
+    margin: auto;
+}
+
+#owner-profile-picture {
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-device-width: 700px) {
+    #profile {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    #owner-profile-picture {
+        width: 60px;
+        height: 60px;
+    }
+}

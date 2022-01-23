@@ -1,0 +1,19 @@
+.tag {
+    width: 8%;
+    height: 25px;
+    text-align: center;
+    background-color : var(--primary);
+    border-radius: 10px;
+    max-width: 1023px;
+    padding: 2px 20px;
+    display: table;
+    justify-content: center;
+}
+
+.tag__content {
+    font-size: 0.6em;
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell;   
+    white-space: nowrap;
+}

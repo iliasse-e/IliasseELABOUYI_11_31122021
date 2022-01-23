@@ -10,15 +10,12 @@ class Banner extends React.Component {
         this.state = {
             banner : props.image,
         }
-        console.log(props)
-        console.log(this.state)
     }
-    
 
     render() {
-        return <div>
+        return <div id="banner-container">
             <img className="banner" src={this.props.image} alt="banner" />
-            <h2 className="title">Chez vous, partout et ailleurs</h2>
+            {this.props.title && <h2 className="title">Chez vous, partout et ailleurs</h2>}
         </div>
     }
 }

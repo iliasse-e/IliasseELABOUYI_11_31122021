@@ -1,17 +1,29 @@
 .flat, .flat__image {
     object-fit: cover;
-    width: 340px;
+    margin: auto;
+    width: 95%;
     height: 340px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+    text-align: center;
+}
+
+.flat:hover {
+    transform: scale(1.01);
+    transition: 200ms;
 }
 
 .flat__layer {
+    text-align: center;
     margin-top: -355px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     padding-bottom: 10px;
     color: white;
     font-size: 20px;
-    width: 100%;
+    width: 95%;
     height: 100%;
     border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -23,9 +35,19 @@
     justify-content: start;
     text-align: left;
     bottom: 25%;
-    left: 5%;
-    width: 70%;
+    left: 14%;
+    width: 74%;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     vertical-align: text-bottom;
+}
+
+.flat-link {
+    text-decoration: none;
+}
+
+@media (max-device-width: 800px) {
+    .flat__title {
+        left: 9%;
+    }
 }

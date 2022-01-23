@@ -1,0 +1,11 @@
+#rating {
+    display: flex;
+    gap: 8px;
+    
+}
+
+@media (max-device-width: 700px) {
+    #rating img {
+        width: 13%;
+    }
+}
