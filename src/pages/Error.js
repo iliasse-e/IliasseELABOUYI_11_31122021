@@ -8,7 +8,7 @@ class Error extends React.Component {
         return <div id="error">
             <h1 id="error__title">404</h1>
             <p id="error__description">Oups! La page que vous demandez n'existe pas.</p>
-            <Link to="/">
+            <Link className="link" to="/">
             <p id="error__linktomain">Retour sur la page d'accueil</p>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 #error {
     color: var(--primary);
+    text-align: center;
 }
 
 #error__title {
@@ -8,10 +9,15 @@
 
 #error__description {
     font-size: 2em;
-
 }
 
 #error__linktomain {
     color: var(--primary);
     text-decoration-color: var(--primary);
+}
+
+@media (max-device-width: 800px) {
+    #error__description {
+        font-size: 1.5em;
+    }
 }

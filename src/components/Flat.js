@@ -7,7 +7,7 @@ class Flat extends React.Component {
 
     render() {
         return <div className="flat">
-            <Link className="flat-link" to={"/flat/" + this.props.flat.id}>
+            <Link className="flat-link link" to={"/flat/" + this.props.flat.id}>
                 <img className="flat__image overlay" src={this.props.source} alt=""/>
                 <div className="flat__layer"></div>
                 <p className="flat__title">{this.props.title}</p>

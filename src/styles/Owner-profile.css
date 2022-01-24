@@ -24,7 +24,7 @@
 
 @media (max-device-width: 700px) {
     #profile {
-        margin-top: 10px;
+        margin-top: 20px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;

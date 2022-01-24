@@ -42,10 +42,6 @@
     vertical-align: text-bottom;
 }
 
-.flat-link {
-    text-decoration: none;
-}
-
 @media (max-device-width: 800px) {
     .flat__title {
         left: 9%;
