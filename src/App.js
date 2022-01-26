@@ -15,6 +15,7 @@ import MainPage from './pages/Main';
 import AboutPage from './pages/About';
 import Error from './pages/Error';
 import FlatPage from './pages/Flat';
+import { ABOUT, ERROR, FLAT, HOME } from './Routes';
 
 
 class App extends React.Component {
@@ -44,19 +45,19 @@ class App extends React.Component {
         <Router>
           <Header />
           <Switch>
-              <Route exact path="/"> 
+              <Route exact path={HOME}> 
                 <MainPage flats={this.state.flats}/>
               </Route>
 
-              <Route path="/About"> 
+              <Route path={ABOUT}> 
                 <AboutPage />
               </Route>
 
-              <Route path="/flat/:flatid"> 
+              <Route path={FLAT}> 
                 <FlatPage flats={this.state.flats}/>
               </Route>
               
-              <Route path="/"> 
+              <Route path={ERROR}> 
                 <Error />
               </Route>
 
