@@ -8,6 +8,7 @@ import Profile from "../components/Owner-profile";
 import { withRouter} from "react-router"
 import Tags from "../components/Tags";
 import Gallery from "../components/Gallery";
+import Loader from "../components/Loader";
 
 class FlatPage extends React.Component {
 
@@ -36,7 +37,7 @@ class FlatPage extends React.Component {
                     <Dropdown equipments title="equipements" content={currentFlat.equipments} className="flat-dropdown"/>
                 </div>
             </div>
-        </main>) : null
+        </main>) : (<Loader />)
             
     }
 }

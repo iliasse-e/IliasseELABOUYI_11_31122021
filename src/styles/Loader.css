@@ -1,0 +1,57 @@
+/* loader animation */
+
+#loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+
+    animation: spinner infinite ease-out 2000ms;
+    z-index: 10;
+}
+
+#loader-layer {
+    background-color: var(--primary);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    display: flex;
+}
+
+#loader-layer img { 
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+
+/* Key-frame loader */
+
+@keyframes spinner {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Opacity background for loader */
+
+@keyframes spinner-layer {
+    0%, 100% {
+        opacity: 0;
+    }
+}

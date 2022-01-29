@@ -38,10 +38,9 @@ class Gallery extends React.Component {
 
         return <div className="flat-page__gallery" id="gallery">
             <div id="image-container">
-                
                 <img className="flat-page__gallery__img" src={pictures[currentIndex]} alt="photo du bien immobilier"/>
-                <img className="flat-page__gallery__prev" src={arrowPrevious} onClick={this.previous} alt="image précédente" />
-                <img className="flat-page__gallery__next" src={arrowNext} onClick={this.next} alt="image suivante" />
+                {this.state.length > 1 && <img className="flat-page__gallery__prev" src={arrowPrevious} onClick={this.previous} alt="image précédente" />}
+                {this.state.length > 1 && <img className="flat-page__gallery__next" src={arrowNext} onClick={this.next} alt="image suivante" />}
             </div>
 
         </div>
