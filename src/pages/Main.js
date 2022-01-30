@@ -8,10 +8,10 @@ import Loader from "../components/Loader";
 class MainPage extends React.Component {
     
     render() {
-        return this.props.flats ? (<>
+        return <>
             <Banner title image={banner1}/>
             <FlatList list={this.props.flats}/>
-        </>) : (<Loader />)
+        </>
             
     }
 }

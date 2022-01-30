@@ -1,6 +1,7 @@
 /* loader animation */
 
 #loader {
+    box-shadow: inset 0 0 0 1000px rgb(255, 255, 255, 1);
     position: fixed;
     display: flex;
     justify-content: center;

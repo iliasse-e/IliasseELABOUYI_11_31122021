@@ -5,6 +5,8 @@
 
 #error__title {
     font-size: 8em;
+    margin-top: 0;
+    margin-bottom: 2%;
 }
 
 #error__description {

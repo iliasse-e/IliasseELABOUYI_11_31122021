@@ -10,15 +10,25 @@ import Tags from "../components/Tags";
 import Gallery from "../components/Gallery";
 import Loader from "../components/Loader";
 
-class FlatPage extends React.Component {
+import Error from "./Error";
 
+class FlatPage extends React.Component {
+    state = {
+        isLoading: true
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ isLoading: false }), 300);
+    }
     
     render() {
-        console.log(this.props)
         const currentUserId = this.props.match.params.flatid;
         const currentFlat = this.props.flats.find( ({ id }) => id === currentUserId );
+        console.log(currentFlat)
         
-        return currentFlat ? ( <main className="flat-page">
+        return (currentFlat === undefined || null) ? (
+            this.state.isLoading ? <Loader/> : <Error/>) : (
+            <main className="flat-page">
             <Gallery pictures={currentFlat.pictures}/>
             <div className="flat-page__description">
                 <div className="flat-page__header">
@@ -37,8 +47,8 @@ class FlatPage extends React.Component {
                     <Dropdown equipments title="equipements" content={currentFlat.equipments} className="flat-dropdown"/>
                 </div>
             </div>
-        </main>) : (<Loader />)
-            
+        </main>
+        ) 
     }
 }
 
